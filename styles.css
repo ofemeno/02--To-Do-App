@@ -66,6 +66,7 @@
 }
 
 ul li {
+    /* border: 1px grey solid; */
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -85,5 +86,31 @@ ul li::before {
     background-position: center;
     top: 12px;
     left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/check.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
 }
 
